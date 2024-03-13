@@ -31,7 +31,6 @@ Enable the extension and set allowed roles from the extension's settings. Also e
 
 ## Links
 
-- [Flarum Discuss post](https://discuss.flarum.org/d/24500-registration-roles)
 - [Source code on GitHub](https://github.com/SasSam/flarum-regrole)
 - [Changelog](https://github.com/SasSam/flarum-regrole/blob/master/CHANGELOG.md)
 - [Report an issue](https://github.com/SasSam/flarum-regrole/issues)
