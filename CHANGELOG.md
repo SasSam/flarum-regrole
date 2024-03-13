@@ -1,3 +1,8 @@
+### 1.0.4
+Fork has been created, but the version number is continous. Please read the readme.
+
+- **Fix** Fix for the recent "white screen" issue. The user with no group selected got a console log error. The page didn't load.
+
 ### 1.0.3
 
 ![alert](https://i.imgur.com/ecW3kCU.png)
