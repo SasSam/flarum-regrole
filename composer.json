@@ -1,5 +1,5 @@
 {
-  "name": "the-turk/flarum-regrole",
+  "name": "SasSam/flarum-regrole",
   "description": "Allow users to assign roles to themselves during registration.",
   "keywords": [
     "flarum",
@@ -17,12 +17,15 @@
     {
       "name": "IanM",
       "homepage": "https://discuss.flarum.org/u/ianm"
+    },
+    {
+      "name": "Sas Sam",
+      "email": "496429+SasSam@users.noreply.github.com"
     }
   ],
   "support": {
-    "issues": "https://github.com/the-turk/flarum-regrole/issues",
-    "source": "https://github.com/the-turk/flarum-regrole",
-    "forum": "https://discuss.flarum.org/d/24500"
+    "issues": "https://github.com/SasSam/flarum-regrole/issues",
+    "source": "https://github.com/SasSam/flarum-regrole"
   },
   "require": {
     "flarum/core": "^1.0.0",
