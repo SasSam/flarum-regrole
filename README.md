@@ -1,6 +1,8 @@
 # Registration Roles
 
-[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/the-turk/flarum-regrole/blob/master/LICENSE) [![Latest Stable Version](https://img.shields.io/packagist/v/the-turk/flarum-regrole.svg)](https://packagist.org/packages/the-turk/flarum-regrole) [![Total Downloads](https://img.shields.io/packagist/dt/the-turk/flarum-regrole.svg)](https://packagist.org/packages/the-turk/flarum-regrole)
+[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/SasSam/flarum-regrole/blob/master/LICENSE) [![Latest Stable Version](https://img.shields.io/packagist/v/SasSam/flarum-regrole.svg)](https://packagist.org/packages/SasSam/flarum-regrole) [![Total Downloads](https://img.shields.io/packagist/dt/SasSam/flarum-regrole.svg)](https://packagist.org/packages/SasSam/flarum-regrole)
+
+**Note:** This package is a fork of [the-turk/flarum-regrole](https://github.com/the-turk/flarum-regrole). This package is very handy; however, it has become broken since Flarum v1.7.2 was released ([Discuss](https://discuss.flarum.org/d/24500-registration-roles/62)). The original package has been abandoned as the author is busy. Hence, the fork was the only way to fix it. The version number is continuing the original version number.
 
 Allow users to assign roles to themselves during registration. You can also force existing users.
 
@@ -11,13 +13,13 @@ Allow users to assign roles to themselves during registration. You can also forc
 ## Installation
 
 ```bash
-composer require the-turk/flarum-regrole:"*"
+composer require SasSam/flarum-regrole:"*"
 ```
 
 ## Updating
 
 ```bash
-composer update the-turk/flarum-regrole
+composer update SasSam/flarum-regrole
 php flarum cache:clear
 ```
 
@@ -30,7 +32,7 @@ Enable the extension and set allowed roles from the extension's settings. Also e
 ## Links
 
 - [Flarum Discuss post](https://discuss.flarum.org/d/24500-registration-roles)
-- [Source code on GitHub](https://github.com/the-turk/flarum-regrole)
-- [Changelog](https://github.com/the-turk/flarum-regrole/blob/master/CHANGELOG.md)
-- [Report an issue](https://github.com/the-turk/flarum-regrole/issues)
-- [Download via Packagist](https://packagist.org/packages/the-turk/flarum-regrole)
+- [Source code on GitHub](https://github.com/SasSam/flarum-regrole)
+- [Changelog](https://github.com/SasSam/flarum-regrole/blob/master/CHANGELOG.md)
+- [Report an issue](https://github.com/SasSam/flarum-regrole/issues)
+- [Download via Packagist](https://packagist.org/packages/SasSam/flarum-regrole)
