@@ -1,5 +1,5 @@
 {
-  "name": "@the-turk/flarum-regrole",
+  "name": "@SasSam/flarum-regrole",
   "description": "Allow users to assign roles to themselves during registration.",
   "dependencies": {
     "webpack": "^4.46.0",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/the-turk/flarum-regrole.git"
+    "url": "git://github.com/SasSam/flarum-regrole.git"
   },
   "scripts": {
     "dev": "webpack --mode development --watch",
