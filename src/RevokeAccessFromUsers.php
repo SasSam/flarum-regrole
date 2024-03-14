@@ -32,10 +32,10 @@ class RevokeAccessFromUsers
     public function __construct(SettingsRepositoryInterface $settings)
     {
         // Roles those users allowed to assign themselves
-        $this->allowedRoleIds = json_decode($settings->get('the-turk-regrole.allowed_role_ids', '[]'), true);
+        $this->allowedRoleIds = json_decode($settings->get('sas_sam-regrole.allowed_role_ids', '[]'), true);
 
         // Force users to assign at least one role to themselves
-        $this->forceUsers = boolval($settings->get('the-turk-regrole.force_users', false));
+        $this->forceUsers = boolval($settings->get('sas_sam-regrole.force_users', false));
     }
 
     /**

@@ -26,7 +26,7 @@ class RoleValidator extends AbstractValidator
     protected function getMessages(): array
     {
         return [
-            'required' => $this->translator->trans('the-turk-regrole.forum.required_role_message'),
+            'required' => $this->translator->trans('sas_sam-regrole.forum.required_role_message'),
         ];
     }
 }

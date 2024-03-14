@@ -55,13 +55,13 @@ class SetRoles
         $this->validator = $validator;
 
         // Roles those users allowed to assign themselves
-        $this->allowedRoleIds = json_decode($settings->get('the-turk-regrole.allowed_role_ids', '[]'), true);
+        $this->allowedRoleIds = json_decode($settings->get('sas_sam-regrole.allowed_role_ids', '[]'), true);
 
         // Allow users to have multiple roles assigned
-        $this->allowMultipleRoles = boolval($settings->get('the-turk-regrole.allow_multiple_roles', false));
+        $this->allowMultipleRoles = boolval($settings->get('sas_sam-regrole.allow_multiple_roles', false));
 
         // Force users to assign at least one role to themselves
-        $this->forceUsers = boolval($settings->get('the-turk-regrole.force_users', false));
+        $this->forceUsers = boolval($settings->get('sas_sam-regrole.force_users', false));
     }
 
     /**
