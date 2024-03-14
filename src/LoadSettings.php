@@ -40,13 +40,13 @@ class LoadSettings
         $actor = $serializer->getActor();
 
         $allowedRoleIds = json_decode(
-            $this->settings->get('the-turk-regrole.allowed_role_ids', '[]'),
+            $this->settings->get('sas_sam-regrole.allowed_role_ids', '[]'),
             true
         );
 
         return [
-            'regrole.allow_multiple_roles' => boolval($this->settings->get('the-turk-regrole.allow_multiple_roles', '0')),
-            'regrole.force_users'          => boolval($this->settings->get('the-turk-regrole.force_users', '0')),
+            'regrole.allow_multiple_roles' => boolval($this->settings->get('sas_sam-regrole.allow_multiple_roles', '0')),
+            'regrole.force_users'          => boolval($this->settings->get('sas_sam-regrole.force_users', '0')),
             'regrole.allowed_role_ids'     => $allowedRoleIds,
             'regrole.suspended_actor'      => $actor && $actor->suspended_until,
             'regrole.available_roles'      =>
