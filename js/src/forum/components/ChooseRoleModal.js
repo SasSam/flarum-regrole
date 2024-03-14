@@ -26,7 +26,7 @@ export default class ChooseRoleModal extends Modal {
   }
 
   title() {
-    return app.translator.trans('the-turk-regrole.forum.choose_role_modal.choose_role_heading');
+    return app.translator.trans('sas_sam-regrole.forum.choose_role_modal.choose_role_heading');
   }
 
   content() {
@@ -35,7 +35,7 @@ export default class ChooseRoleModal extends Modal {
         <div className="Form Form--centered">{this.fields().toArray()}</div>
       </div>,
       <div className="Modal-footer">
-        <p>{app.translator.trans('the-turk-regrole.forum.choose_role_modal.choose_role_text')}</p>
+        <p>{app.translator.trans('sas_sam-regrole.forum.choose_role_modal.choose_role_text')}</p>
       </div>,
     ];
   }
@@ -48,7 +48,7 @@ export default class ChooseRoleModal extends Modal {
     return (
       <div className="Form-group regRole-group">
         {/* This label will be hidden on "Choose A Role" modal via CSS. */}
-        <label className="regRole-label">{app.translator.trans('the-turk-regrole.forum.sign_up_modal.choose_role_heading')}</label>
+        <label className="regRole-label">{app.translator.trans('sas_sam-regrole.forum.sign_up_modal.choose_role_heading')}</label>
         <div className="regRole-container">
           {app.forum.attribute('regrole.available_roles').map((group) => (
             <div className="regRole-item">
@@ -104,7 +104,7 @@ export default class ChooseRoleModal extends Modal {
       'submit',
       <div className="Form-group">
         <Button className="Button Button--primary Button--block" type="submit" loading={this.loading}>
-          {app.translator.trans('the-turk-regrole.forum.choose_role_modal.save_button')}
+          {app.translator.trans('sas_sam-regrole.forum.choose_role_modal.save_button')}
         </Button>
       </div>,
       -10

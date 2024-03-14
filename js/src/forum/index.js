@@ -16,7 +16,7 @@ import User from 'flarum/common/models/User';
 
 import ChooseRoleModal from './components/ChooseRoleModal';
 
-app.initializers.add('the-turk-regrole', () => {
+app.initializers.add('sas_sam-regrole', () => {
   User.prototype.regRole_allGroups = Model.hasMany('regrole_all_groups');
 
   extend(Page.prototype, 'oninit', function () {
@@ -64,13 +64,13 @@ app.initializers.add('the-turk-regrole', () => {
             const alertContent = `
                 <div class="Alert Alert--warning ${alertClassName}">
                   <span class="Alert-body">
-                    ${app.translator.trans('the-turk-regrole.forum.suspended_temporarily_message')}
+                    ${app.translator.trans('sas_sam-regrole.forum.suspended_temporarily_message')}
                   </span>
                   <ul class="Alert-controls">
                     <li>
                       <button class="Button Button--link">
                         <span class="Button-label">
-                            ${app.translator.trans('the-turk-regrole.forum.choose_role_button_label')}
+                            ${app.translator.trans('sas_sam-regrole.forum.choose_role_button_label')}
                         </span>
                       </button>
                     </li>

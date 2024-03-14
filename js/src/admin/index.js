@@ -14,28 +14,28 @@ import Group from 'flarum/common/models/Group';
 import Stream from 'flarum/common/utils/Stream';
 import Switch from 'flarum/common/components/Switch';
 
-app.initializers.add('the-turk-regrole', (app) => {
+app.initializers.add('sas_sam-regrole', (app) => {
   extend(ExtensionPage.prototype, 'sections', function (items) {
-    if (this.extension.id !== 'the-turk-regrole') return;
+    if (this.extension.id !== 'sas_sam-regrole') return;
 
     items.has('permissions') ? items.remove('permissions') : '';
   });
 
   extend(ExtensionPage.prototype, 'oninit', function () {
-    if (this.extension.id !== 'the-turk-regrole') return;
+    if (this.extension.id !== 'sas_sam-regrole') return;
 
-    this.roleIds = Stream(JSON.parse(app.data.settings['the-turk-regrole.allowed_role_ids'] || '[]'))();
+    this.roleIds = Stream(JSON.parse(app.data.settings['sas_sam-regrole.allowed_role_ids'] || '[]'))();
   });
 
   override(AdminPage.prototype, 'dirty', function (original) {
-    if (!this.extension || this.extension.id !== 'the-turk-regrole') return original();
+    if (!this.extension || this.extension.id !== 'sas_sam-regrole') return original();
 
     const dirty = {};
 
     const roleIds = JSON.stringify(this.roleIds);
 
-    if (roleIds !== app.data.settings['the-turk-regrole.allowed_role_ids']) {
-      dirty['the-turk-regrole.allowed_role_ids'] = roleIds;
+    if (roleIds !== app.data.settings['sas_sam-regrole.allowed_role_ids']) {
+      dirty['sas_sam-regrole.allowed_role_ids'] = roleIds;
     }
 
     Object.keys(this.settings).forEach((key) => {
@@ -50,7 +50,7 @@ app.initializers.add('the-turk-regrole', (app) => {
   });
 
   app.extensionData
-    .for('the-turk-regrole')
+    .for('sas_sam-regrole')
     .registerSetting(function () {
       // For some reason, `Group.MODERATOR_ID` is not available in the Group model.
       // @see https://github.com/flarum/core/blob/eb4b18a979c7406cbf154a107662652d282fe415/src/Group/Group.php#L50-L53
@@ -58,8 +58,8 @@ app.initializers.add('the-turk-regrole', (app) => {
 
       return [
         <div className="Form-group">
-          <label>{app.translator.trans('the-turk-regrole.admin.settings.allowed_roles_label')}</label>
-          <div className="helpText">{app.translator.trans('the-turk-regrole.admin.settings.allowed_roles_text')}</div>
+          <label>{app.translator.trans('sas_sam-regrole.admin.settings.allowed_roles_label')}</label>
+          <div className="helpText">{app.translator.trans('sas_sam-regrole.admin.settings.allowed_roles_text')}</div>
         </div>,
         <div className="RegRole-allowedRoles-container">
           {app.store
@@ -93,17 +93,17 @@ app.initializers.add('the-turk-regrole', (app) => {
       ];
     })
     .registerSetting(function () {
-      return <h3>{app.translator.trans('the-turk-regrole.admin.settings.other_options_heading')}</h3>;
+      return <h3>{app.translator.trans('sas_sam-regrole.admin.settings.other_options_heading')}</h3>;
     })
     .registerSetting({
-      setting: 'the-turk-regrole.allow_multiple_roles',
-      label: app.translator.trans('the-turk-regrole.admin.settings.allow_multiple_roles_label'),
+      setting: 'sas_sam-regrole.allow_multiple_roles',
+      label: app.translator.trans('sas_sam-regrole.admin.settings.allow_multiple_roles_label'),
       type: 'boolean',
     })
     .registerSetting({
-      setting: 'the-turk-regrole.force_users',
-      label: app.translator.trans('the-turk-regrole.admin.settings.force_users_label'),
-      help: app.translator.trans('the-turk-regrole.admin.settings.force_users_text'),
+      setting: 'sas_sam-regrole.force_users',
+      label: app.translator.trans('sas_sam-regrole.admin.settings.force_users_label'),
+      help: app.translator.trans('sas_sam-regrole.admin.settings.force_users_text'),
       type: 'boolean',
     });
 });
